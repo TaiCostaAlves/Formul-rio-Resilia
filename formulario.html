@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Resilia</title>
+
+    <style>
+      
+        .principal {display: flex;
+            background-image: linear-gradient(to bottom, #FFFFFF 30% ,#ffc107 );
+            background-attachment: fixed; outline: none;
+        }
+       
+        .descricao {
+        text-align: left;font-family:sans-serif; width:70%;
+        margin-left: 40px; padding: 5px; font-size: 45px;
+
+        }
+
+        .detalhe {font-size:  17px; font-family:sans-serif;width: 50%;
+        margin-left: 40px; padding: 5px; color:rgb(58, 58, 58)}
+        
+        .inscricao {text-align: center;font-size: 39px;font-family: sans-serif; outline: none}
+
+        footer { text-align: center;background: url("base.jpg");
+        padding: 40px 0;
+
+        }
+
+        .copyright{ 
+            color: #ffc107; font-size: 13px; margin: 20px 0 0;
+        }
+        
+        main {
+	width: 600px;
+	margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+form {
+	
+    border: 1px solid #ffc107 ;
+    background-image: linear-gradient(to left 40%,#cc9b06,#FFC107,white);
+    padding: 50px 20px 75px 50px  ;
+    display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+    border-radius: 15px;
+    outline: none
+    
+}
+
+form label, form p, form select {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+    outline: none
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 300px; border-radius: 15px;
+    border: 1px solid #ffc107; 
+    outline: none
+}
+.checkboss {
+    margin: 20px 0;
+    width: 90%;
+}
+    .enviar {width: 200px;padding: 15px 0;background: white;color: black;
+     font-size: 18px; border: 2px solid white; border-radius: 10px; transition: 1s;cursor: pointer;} 
+     .enviar:hover{background: black ;transform: scale(1.1); color: #ffc107; border-color: black;}
+
+
+    </style>
+    </head>
+
+        <div class="principal">
+        <header>
+			<div class="caixa">
+				<h1><img src="resilia.png"></h1>
+
+            <h2 class="descricao">O mercado está buscando pessoas desenvolvedoras e  você pode preencher essas vagas!
+            </h2>
+
+            <h3 class="detalhe">Em 6 meses, aprenda programação DE VERDADE de forma mais rápida e acessível para começar a trabalhar com tecnologia.</h3>
+
+			
+			</div>
+		</header>
+    
+        
+        <main>
+            <h4 class="inscricao">Inscreva-se já!</h4>
+            <form>
+                	
+                <label for="nomesobrenome"> Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email"> Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="Telefone"> Telefone</label>
+                <input type="tel" id="Telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="datanascimento"> Data de nascimento</label>
+                <input type="date" id="datanascimento" class="input-padrao" required>
+
+    <div>
+               
+<label for="objetivo">Objetivo:</label>
+
+<select id="objetivo" >
+    <option value="selecioneumobjetivo">Selecione um objetivo</option>
+  <option value="conseguirumemprego">Conseguir um emprego</option>
+  <option value="mudardecarreira">Mudar de carreira</option>
+  <option value="aprenderprogramacao">Aprender programação</option>
+  <option value="aprendersoftkills" selected>Aprender Soft Kills</option>
+  <option value="conhecerprofissionaisdomercado">Conhecer profissionais do mercado</option>
+  <option value="termentoriaprofissional">Ter mentoria profissional</option>
+  <option value="acessoacomunidadedeprogramadores">Acesso à comunidade de programadores</option>
+  <option value="outros" selected>Outros</option>
+</select>
+</fieldset>
+
+
+    <div>
+  
+<label for="comovoceconheceuaresilia">Como você conheceu a Resilia?</label>
+
+<select id="comovoceconheceuaresilia">
+  <option value="semopcao">---</option>
+  <option value="anuncionofacebookinstagram">Anúncio no Facebook/Instagram</option>
+  <option value="anunciogoogleououtrossites">Anúncio no Google ou outros sites</option>
+  <option value="divulgacaodealgumaempresaparceira" selected>Divulgaçao de alguma empresa parceira</option>
+  <option value="imprensasjornaistvrevistas">Imprensa(jornais,TV,revistas)</option>
+  <option value="indicacaodeumaamigo">Indicação de um amigo</option>
+  <option value="panfleto">Panfleto</option>
+  <option value="pesquisanogoogle" selected>Pesquisa no Google</option>	
+
+</select>   
+    </div>                
+            <div>
+                <p> Você concorda com a nossa <strong><b>Política de Privacidade?</b> </strong></p>        
+                <label for="radio-sim"> <input type="radio" name="opcao" value="Sim" id="radio-sim"> Sim </label>
+                
+                
+                <label for="radio-nao"> <input type="radio" name="opcao" value="Sim" id="radio-nao">Não </label>
+                
+
+                <label class="checkboss"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+            </div>
+            
+        <input type="submit" value="Enviar" class="enviar">
+            </form>
+
+        </main>
+    </div>
+        <footer>
+			
+			<p class="copyright">&copy; Copyright Tainara Alves - 2021</p>
+		</footer>
+	</body>
+</html>
